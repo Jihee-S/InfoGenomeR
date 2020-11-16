@@ -24,7 +24,7 @@ write.table(seg.dat.fn,"copy_numbers_ABSOLUTE_input", sep="\t", quote=F, col.nam
 sigma.p<-0.02
 max.sigma.h <- 0.02
  min.ploidy <-  as.numeric(args[3]);
-max.ploidy <-  as.numeric(args[4]);
+max.ploidy <-  min(4, as.numeric(args[4]));
 
 if(args[5] == "T" ){
         sigma.p = 0;
