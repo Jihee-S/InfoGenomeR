@@ -1221,7 +1221,7 @@ while(nrow(SV_set)!=0){
 			}
 		}
 		
-		if(false_SV_test!=0){
+		if(false_SV_test>0){
 			false_SVs=c(false_SVs, 1);
 		}else{
 			false_SVs=c(false_SVs, 0);
@@ -1230,7 +1230,7 @@ while(nrow(SV_set)!=0){
 
 #############################################
 	for(A_SV_i in 1:nrow(A_SV)){
-		if(false_SVs[A_SV_i]==1){
+		if(A_SV[A_SV_i,15]>0){
        ##         if(0){
 			A_SV[A_SV_i,15]=0;
 		}else{
