@@ -216,7 +216,7 @@ for(i in 1:23){
 			segs2_i=which(segs2[,1]==paste(iindex,".",brp_adjusted1,"-",brp_adjusted2,sep=""));
 			if(length(segs2_i)!=0){
                                 segs2_u=segs2[min(segs2_i):max(segs2_i),];
-                                segs2_u=my.merge(segs2_u);
+                #                segs2_u=my.merge(segs2_u);
 		#		segs2_u=germ_remove(segs2_u);
 				segs2_u[1,2]<-brp_adjusted1;
 	                        segs2_u[nrow(segs2_u),3]<-brp_adjusted2;
